@@ -1,0 +1,51 @@
+.teams {
+  @extend %section-padding;
+  
+  background-color: $primary-bcg-color;
+}
+
+.teams__heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: $title-text-color;
+  margin-bottom: 50px;
+}
+
+.member {
+  @extend %list;
+
+  display: flex;
+}
+
+.member__card {
+  background-color: $primary-white-color;
+  box-shadow: $team-member-shadow;
+  border-radius: 0px 0px 4px 4px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.member__info {
+  padding: 30px 0;
+}
+
+.member__name {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+  margin-bottom: 10px;
+}
+
+.member__position {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.18;
+  margin-bottom: 16px;
+}
