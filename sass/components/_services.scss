@@ -1,6 +1,10 @@
 .services {
   padding-top: 47px;
   padding-bottom: 94px;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
 
 .services__heading {

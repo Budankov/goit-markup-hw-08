@@ -1,18 +1,26 @@
 .page-header {
-  display: flex;
   border-bottom: 1px solid $header-border-color;
 }
 
 .main-nav {
-  display: flex;
-  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .site-nav {
   @extend %list;
 
-  display: flex;
-  margin-left: 93px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 .site-nav__item {
@@ -58,13 +66,22 @@
 }
 
 .contact-nav {
-  display: flex;
-  margin-left: auto;
-  list-style: none;
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+    flex-direction: column;
+    list-style: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    flex-direction: row;
+  }
 }
 
 .contact-nav__item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
 }
 
 .contact-nav__link {
@@ -72,8 +89,6 @@
 
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -83,6 +98,15 @@
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 5px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
