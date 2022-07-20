@@ -1,7 +1,14 @@
 .features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  // @media screen and (min-width: 480px) {
+  // }
+
+  @media screen and (min-width: 1200px) {
   padding-top: 94px;
   padding-bottom: 47px;
   }
+}
 
 .features__heading {
   font-weight: 700;
@@ -14,7 +21,7 @@
 
 .features__list {
   @extend %list;
-  gap: 30px;
+  // gap: 30px;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -23,12 +30,12 @@
 }
 
 .features__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
   @media screen and (min-width: 480px) {
     width: 450px;
-
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
   }
 
   @media screen and (min-width: 768px) {
@@ -58,7 +65,12 @@
   font-weight: 700;
   font-size: inherit;
   line-height: 1.14;
+  text-align: center;
   text-transform: uppercase;
   color: $title-text-color;
   margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }

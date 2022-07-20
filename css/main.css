@@ -270,6 +270,9 @@ ol {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main-page/hero/hero-desktop@2x.jpg");
   }
 }
+.container-hero {
+  padding: 118px 60px;
+}
 @media screen and (min-width: 480px) {
   .container-hero {
     padding-top: 118px;
@@ -284,7 +287,6 @@ ol {
 }
 
 .hero-title {
-  width: 360px;
   margin: 0 auto 30px;
   font-weight: 900;
   font-size: 26px;
@@ -293,6 +295,11 @@ ol {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media screen and (min-width: 480px) {
+  .hero-title {
+    width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero-title {
@@ -341,8 +348,14 @@ ol {
 }
 
 .features {
-  padding-top: 94px;
-  padding-bottom: 47px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
 }
 
 .features__heading {
@@ -354,9 +367,6 @@ ol {
   margin-bottom: 50px;
 }
 
-.features__list {
-  gap: 30px;
-}
 @media screen and (min-width: 768px) {
   .features__list {
     display: -webkit-box;
@@ -367,12 +377,12 @@ ol {
   }
 }
 
+.features__item:not(:last-child) {
+  margin-bottom: 30px;
+}
 @media screen and (min-width: 480px) {
   .features__item {
     width: 450px;
-  }
-  .features__item:not(:last-child) {
-    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -409,9 +419,15 @@ ol {
   font-weight: 700;
   font-size: inherit;
   line-height: 1.14;
+  text-align: center;
   text-transform: uppercase;
   color: #212121;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: left;
+  }
 }
 
 .services {
@@ -505,7 +521,17 @@ ol {
   border-radius: 0px 0px 4px 4px;
 }
 .member__card:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .member__card:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.member__photo {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .member__info {
@@ -587,18 +613,16 @@ ol {
   margin-bottom: 50px;
 }
 
-@media screen and (min-width: 480px) {
-  .clients__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
-.clients__item:not(:last-child) {
-  margin-right: 30px;
+.clients__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .clients__link {
