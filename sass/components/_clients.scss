@@ -1,5 +1,11 @@
 .clients {
-  @extend %section-padding;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients__heading {
@@ -8,7 +14,11 @@
   line-height: 1.16;
   text-align: center;
   color: $title-text-color;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .clients__list {
@@ -24,7 +34,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid $primary-icon-color;
   border-radius: 4px;
@@ -38,6 +48,14 @@
   &:hover .clients__logo,
   &:focus .clients__logo {
     fill: $accent-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 }
 

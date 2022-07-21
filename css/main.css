@@ -80,7 +80,7 @@ ol {
   font-style: normal;
 }
 
-.portfolio, .clients, .teams {
+.portfolio, .teams {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -641,13 +641,29 @@ ol {
   fill: #ffffff;
 }
 
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .clients__heading {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .clients__heading {
+    margin-bottom: 50px;
+  }
 }
 
 .clients__list {
@@ -672,7 +688,7 @@ ol {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -684,6 +700,16 @@ ol {
 }
 .clients__link:hover .clients__logo, .clients__link:focus .clients__logo {
   fill: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .clients__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+  }
 }
 
 .clients__logo {
