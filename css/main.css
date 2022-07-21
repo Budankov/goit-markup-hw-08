@@ -91,6 +91,12 @@ ol {
   border-bottom: 1px solid #ececec;
 }
 
+@media screen and (max-width: 767.98px) {
+  .main-nav {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
 @media screen and (min-width: 768px) {
   .main-nav {
     display: -webkit-box;
@@ -410,6 +416,11 @@ ol {
   opacity: 0.8;
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
+}
+@media screen and (max-width: 321.98px) {
+  .button {
+    padding: 10px 27px;
+  }
 }
 
 .features {
