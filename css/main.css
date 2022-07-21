@@ -504,7 +504,18 @@ ol {
   margin-bottom: 50px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .member {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .member {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -519,19 +530,29 @@ ol {
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
+  text-align: center;
+  width: 270px;
 }
-.member__card:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767.98px) {
+  .member__card {
+    width: 100%;
+  }
+  .member__card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .member__card {
+    margin-left: 30px;
+    margin-top: 30px;
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+  }
 }
 @media screen and (min-width: 1200px) {
   .member__card:not(:last-child) {
     margin-right: 30px;
   }
-}
-
-.member__photo {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .member__info {

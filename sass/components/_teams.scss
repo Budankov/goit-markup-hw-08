@@ -16,7 +16,14 @@
 .member {
   @extend %list;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+
+  @media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: wrap;
   }
@@ -26,9 +33,20 @@
   background-color: $primary-white-color;
   box-shadow: $team-member-shadow;
   border-radius: 0px 0px 4px 4px;
+  text-align: center;
+  width: 270px;
 
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (max-width: 767.98px) {
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 30px * 2) / 2);
   }
 
   @media screen and (min-width: 1200px) {
@@ -38,10 +56,23 @@
   }
 }
 
-.member__photo {
-  margin-left: auto;
-  margin-right: auto;
-}
+// .member__photo {
+//   margin-left: auto;
+//   margin-right: auto;
+
+//   @media screen and (max-width: 767.98px) {
+//     max-width: 450px;
+//   }
+
+//   @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+//     max-width: 354px;
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     max-width: 270px;
+//   }
+
+// }
 
 .member__info {
   padding: 30px 0;
