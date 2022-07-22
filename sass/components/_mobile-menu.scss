@@ -31,10 +31,16 @@
   border: none;
   height: 40px;
   width: 40px;
+  cursor: pointer;
 
   @media screen and (min-width: 767.98px) {
     display: none;
   }
+}
+
+.mobile-menu__icons:focus,
+.mobile-menu__icons:hover {
+  fill: $accent-color;
 }
 
 .icon-cross {

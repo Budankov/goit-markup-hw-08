@@ -288,11 +288,17 @@ ol {
   border: none;
   height: 40px;
   width: 40px;
+  cursor: pointer;
 }
 @media screen and (min-width: 767.98px) {
   .mobile-menu__button {
     display: none;
   }
+}
+
+.mobile-menu__icons:focus,
+.mobile-menu__icons:hover {
+  fill: #2196f3;
 }
 
 .icon-cross {
@@ -1408,6 +1414,11 @@ ol {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 1199.98px) {
+  .form__field--policy {
+    font-size: 12px;
+  }
 }
 
 .form__button {
