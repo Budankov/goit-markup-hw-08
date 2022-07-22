@@ -7,6 +7,7 @@
   background-color: $backdrop-bcg-color;
   opacity: 1;
   transition: opacity $transition-duration, visability $transition-duration;
+  z-index: 50;
 }
 
 .is-hidden {
@@ -26,12 +27,21 @@
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform $transition-duration;
-  min-width: 528px;
-  min-height: 581px;
+  max-width: 450px;
+  max-height: 609px;
   padding: 40px;
   background: $primary-white-color;
   box-shadow: $modal-border-bcg-color;
   border-radius: 4px;
+
+  @media screen and (max-width: 460px) {
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+    max-height: 581px;
+  }
 }
 
 .modal__btn-close {
