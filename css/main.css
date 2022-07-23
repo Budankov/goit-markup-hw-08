@@ -1028,20 +1028,31 @@ ol {
   background-color: #2f303a;
 }
 
-@media screen and (max-width: 767.98px) {
-  .footer-container {
-    text-align: center;
-    margin: 0 auto;
-  }
+.footer-container {
+  display: block;
+  text-align: center;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .footer-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
   }
 }
 
@@ -1096,7 +1107,19 @@ ol {
     padding: 60px 0;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .company-socials--footer {
+    display: inline-block;
+    margin-left: auto;
+  }
+}
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .subscribe {
+    min-width: 450px;
+    margin-top: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .subscribe {
     display: -webkit-box;
@@ -1105,7 +1128,6 @@ ol {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 93px;
   }
 }
 
@@ -1188,7 +1210,7 @@ ol {
 .subscribe__button {
   padding: 10px 28px 10px 29px;
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1199.98px) {
   .subscribe__button {
     margin-top: 20px;
   }

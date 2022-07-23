@@ -1,9 +1,12 @@
 .subscribe {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    min-width: 450px;
+    margin-top: 60px;
+  }
 
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
-    margin-left: 93px;
   }
 }
 
@@ -60,7 +63,7 @@
 .subscribe__button {
   padding: 10px 28px 10px 29px;
 
-  @media screen and (max-width: 767.98px) {
+  @media screen and (max-width: 1199.98px) {
     margin-top: 20px;
   }
 
