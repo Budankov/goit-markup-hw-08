@@ -1,5 +1,16 @@
 .portfolio {
-  @extend %section-padding;
+  margin-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 80px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio__list {
@@ -15,6 +26,7 @@
   flex-basis: calc((100% - 30px * 3) / 3);
   margin-top: 30px;
   margin-left: 30px;
+
 }
 
 .project {
@@ -38,6 +50,18 @@
 .project__item {
   position: relative;
   overflow: hidden;
+
+  @media screen and (max-width: 767.98px) {
+    :not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .project__overlay {

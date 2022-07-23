@@ -84,7 +84,7 @@ ol {
   font-style: normal;
 }
 
-.portfolio, .teams {
+.teams {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -901,6 +901,23 @@ ol {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.portfolio {
+  margin-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio {
+    margin-top: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .portfolio__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -939,7 +956,11 @@ ol {
   position: relative;
   overflow: hidden;
 }
-
+@media screen and (max-width: 767.98px) {
+  .project__item :not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 .project__overlay {
   position: absolute;
   display: block;
@@ -991,14 +1012,17 @@ ol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px 8px;
   margin-bottom: 50px;
 }
-
-.filters-list__item:not(:last-child) {
-  margin-right: 8px;
+@media screen and (min-width: 768px) {
+  .filters-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .filters-list__button {

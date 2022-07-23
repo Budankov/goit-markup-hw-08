@@ -62,6 +62,56 @@
             </li>
           </ul>
         </nav>
+        <button class="mobile-menu__button" type="button" aria-expanded="false" data-menu-button>
+          <svg
+            class="mobile-menu__icons"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use class="icon-cross" xlink:href="./images/icons/sprite.svg#cross"></use>
+            <use class="icon-menu" xlink:href="./images/icons/sprite.svg#menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <ul class="menu-pages">
+          <li class="menu-pages__item">
+            <a class="menu-pages__link" href="./index.html">Студия</a>
+          </li>
+          <li class="menu-pages__item">
+            <a class="menu-pages__link link--current" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="menu-pages__item">
+            <a class="menu-pages__link" href="./index.html">Контакты</a>
+          </li>
+        </ul>
+        <div class="menu-container">
+          <ul class="menu-contacts">
+            <li class="menu-contacts__item">
+              <a class="menu-contacts__link link--current" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="menu-contacts__item">
+              <a class="menu-contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="menu-socials">
+            <li class="menu-socials__item">
+              <a class="menu-socials__link" href="" rel="noreferrer noopener">Instagram</a>
+            </li>
+            <li class="menu-socials__item">
+              <a class="menu-socials__link" href="" rel="noreferrer noopener">Twitter</a>
+            </li>
+            <li class="menu-socials__item">
+              <a class="menu-socials__link" href="" rel="noreferrer noopener">Facebook</a>
+            </li>
+            <li class="menu-socials__item">
+              <a class="menu-socials__link" href="" rel="noreferrer noopener">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- Main block -->
@@ -95,13 +145,35 @@
             <li class="portfolio__project">
               <a class="project" href="">
                 <div class="project__item">
-                  <img
-                    class="project__image"
-                    src="./images/portfolio/technokriak.jpg"
-                    alt="Ноутбук с открытым сайтом"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/technokriak-desktop.jpg    1x,
+                        ./images/portfolio/desktop/technokriak-desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/technokriak-tablet.jpg    1x,
+                        ./images/portfolio/tablet/technokriak-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/technokriak-mobile.jpg    1x,
+                        ./images/portfolio/mobile/technokriak-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767.98px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/desktop/technokriak-desktop.jpg"
+                      alt="Ноутбук с открытым сайтом"
+                      width="370"
+                    />
+                  </picture>
                   <div class="project__overlay">
                     <p class="project__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -119,13 +191,35 @@
             <li class="portfolio__project">
               <a class="project" href="">
                 <div class="project__item">
-                  <img
-                    class="project__image"
-                    src="./images/portfolio/poster.jpg"
-                    alt="Постер с баксетболистами"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/poster-desktop.jpg    1x,
+                        ./images/portfolio/desktop/poster-desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/poster-tablet.jpg    1x,
+                        ./images/portfolio/tablet/poster-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/poster-mobile.jpg    1x,
+                        ./images/portfolio/mobile/poster-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767.98px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/desktop/poster-desktop.jpg"
+                      alt="Постер с баксетболистами"
+                      width="370"
+                    />
+                  </picture>
                   <div class="project__overlay">
                     <p class="project__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -145,13 +239,35 @@
             <li class="portfolio__project">
               <a class="project" href="">
                 <div class="project__item">
-                  <img
-                    class="project__image"
-                    src="./images/portfolio/restaurant.jpg"
-                    alt="Логотип ресторана"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/restaurant-desktop.jpg    1x,
+                        ./images/portfolio/desktop/restaurant-desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/restaurant-tablet.jpg    1x,
+                        ./images/portfolio/tablet/restaurant-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/restaurant-mobile.jpg    1x,
+                        ./images/portfolio/mobile/restaurant-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767.98px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/desktop/restaurant-desktop.jpg"
+                      alt="Логотип ресторана"
+                      width="370"
+                    />
+                  </picture>
                   <div class="project__overlay">
                     <p class="project__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -169,13 +285,35 @@
             <li class="portfolio__project">
               <a class="project" href="">
                 <div class="project__item">
-                  <img
-                    class="project__image"
-                    src="./images/portfolio/prime.jpg"
-                    alt="Наушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/prime-desktop.jpg    1x,
+                        ./images/portfolio/desktop/prime-desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/prime-tablet.jpg    1x,
+                        ./images/portfolio/tablet/prime-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/prime-mobile.jpg    1x,
+                        ./images/portfolio/mobile/prime-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767.98px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/desktop/prime-desktop.jpg"
+                      alt="Наушники"
+                      width="370"
+                    />
+                  </picture>
                   <div class="project__overlay">
                     <p class="project__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -193,13 +331,35 @@
             <li class="portfolio__project">
               <a class="project" href="">
                 <div class="project__item">
-                  <img
-                    class="project__image"
-                    src="./images/portfolio/boxes.jpg"
-                    alt="Изображение двух коробок"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/boxes-desktop.jpg    1x,
+                        ./images/portfolio/desktop/boxes-desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/boxes-tablet.jpg    1x,
+                        ./images/portfolio/tablet/boxes-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/boxes-mobile.jpg    1x,
+                        ./images/portfolio/mobile/boxes-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767.98px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/desktop/boxes-desktop.jpg"
+                      alt="Изображение двух коробок"
+                      width="370"
+                    />
+                  </picture>
                   <div class="project__overlay">
                     <p class="project__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -217,13 +377,35 @@
             <li class="portfolio__project">
               <a class="project" href="">
                 <div class="project__item">
-                  <img
-                    class="project__image"
-                    src="./images/portfolio/inspiration.jpg"
-                    alt="Монитор с открытым сайтом"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/inspiration-desktop.jpg    1x,
+                        ./images/portfolio/desktop/inspiration-desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/inspiration-tablet.jpg    1x,
+                        ./images/portfolio/tablet/inspiration-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/inspiration-mobile.jpg    1x,
+                        ./images/portfolio/mobile/inspiration-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767.98px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/desktop/inspiration-desktop.jpg"
+                      alt="Монитор с открытым сайтом"
+                      width="370"
+                    />
+                  </picture>
                   <div class="project__overlay">
                     <p class="project__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -241,13 +423,35 @@
             <li class="portfolio__project">
               <a class="project" href="">
                 <div class="project__item">
-                  <img
-                    class="project__image"
-                    src="./images/portfolio/edition.jpg"
-                    alt="Изображение с открытым журналом"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/edition-desktop.jpg    1x,
+                        ./images/portfolio/desktop/edition-desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/edition-tablet.jpg    1x,
+                        ./images/portfolio/tablet/edition-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/edition-mobile.jpg    1x,
+                        ./images/portfolio/mobile/edition-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767.98px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/desktop/edition-desktop.jpg"
+                      alt="Изображение с открытым журналом"
+                      width="370"
+                    />
+                  </picture>
                   <div class="project__overlay">
                     <p class="project__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -265,13 +469,35 @@
             <li class="portfolio__project">
               <a class="project" href="">
                 <div class="project__item">
-                  <img
-                    class="project__image"
-                    src="./images/portfolio/lab.jpg"
-                    alt="Изображение бирки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/lab-desktop.jpg    1x,
+                        ./images/portfolio/desktop/lab-desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/lab-tablet.jpg    1x,
+                        ./images/portfolio/tablet/lab-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/lab-mobile.jpg    1x,
+                        ./images/portfolio/mobile/lab-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767.98px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/desktop/lab-desktop.jpg"
+                      alt="Изображение бирки"
+                      width="370"
+                    />
+                  </picture>
                   <div class="project__overlay">
                     <p class="project__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -289,13 +515,35 @@
             <li class="portfolio__project">
               <a class="project" href="">
                 <div class="project__item">
-                  <img
-                    class="project__image"
-                    src="./images/portfolio/business.jpg"
-                    alt="Работа на ноутбуке над сайтом"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/business-desktop.jpg    1x,
+                        ./images/portfolio/desktop/business-desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/business-tablet.jpg    1x,
+                        ./images/portfolio/tablet/business-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/business-mobile.jpg    1x,
+                        ./images/portfolio/mobile/business-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767.98px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/desktop/business-desktop.jpg"
+                      alt="Работа на ноутбуке над сайтом"
+                      width="370"
+                    />
+                  </picture>
                   <div class="project__overlay">
                     <p class="project__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -344,7 +592,7 @@
           </address>
         </div>
         <!-- Socials -->
-        <div class="company-socials">
+        <div class="company-socials company-socials--footer">
           <h2 class="company-socials__heading">Присоединяйтесь</h2>
           <ul class="socials">
             <li class="socials__item">
@@ -410,5 +658,66 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal -->
+    <!-- Modal Windows -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__btn-close" data-modal-close>
+          <svg class="modal__icon-close" width="18" height="18">
+            <use href="./images/icons/sprite.svg#close"></use>
+          </svg>
+        </button>
+
+        <!-- Modal Form -->
+        <form class="form js-speaker-form">
+          <b class="form__heading">Оставьте свои данные, мы вам перезвоним</b>
+          <label class="form__field" for="name">
+            <span class="form__label">Имя</span>
+            <svg class="form__icon" width="18" height="18">
+              <use href="./images/icons/sprite.svg#person"></use>
+            </svg>
+            <input class="form__input" type="text" name="name" autofocus />
+          </label>
+          <label class="form__field" for="tel">
+            <span class="form__label">Телефон</span>
+            <svg class="form__icon" width="18" height="18">
+              <use href="./images/icons/sprite.svg#phone"></use>
+            </svg>
+            <input class="form__input" type="tel" name="tel" />
+          </label>
+          <label class="form__field" for="mail">
+            <span class="form__label">Почта</span>
+            <svg class="form__icon" width="18" height="18">
+              <use href="./images/icons/sprite.svg#email"></use>
+            </svg>
+            <input class="form__input" type="email" name="mail" />
+          </label>
+          <label class="form__field form__field--comment" for="comment">
+            <span class="form__label">Комментарий</span>
+            <textarea
+              class="form__textarea"
+              type="comment"
+              name="comment"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+          <label class="form__field form__field--policy">
+            <input class="form__checkbox visually-hidden" type="checkbox" name="policy" />
+            <svg class="form__icon--checkbox" width="16" height="15">
+              <use href="./images/icons/sprite.svg#check"></use>
+            </svg>
+            <span>
+              Соглашаюсь с рассылкой и принимаю
+              <a class="form__link" href="#">Условия договора</a>
+            </span>
+          </label>
+          <button class="button form__button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
