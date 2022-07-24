@@ -2,21 +2,21 @@
   position: fixed;
   top: 0;
   left: 0;
-  min-height: 60px;
+  height: 60px;
   width: 100%;
   border-bottom: 1px solid $header-border-color;
   background-color: $primary-white-color;
   z-index: 2;
 
   @media screen and (min-width: 768px) {
-    min-height: 80px;
+    height: 80px;
   }
 }
 
 .main-nav {
   @media screen and (max-width: 767.98px) {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 15px;
+    padding-bottom: 14px;
   }
 
   @media screen and (min-width: 768px) {

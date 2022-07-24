@@ -22,7 +22,7 @@
 
 .company-address {
   display: inline-block;
-  width: 231px;
+  width: 232px;
 
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
@@ -42,7 +42,7 @@
 }
 
 .company-address__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .company-address__link {

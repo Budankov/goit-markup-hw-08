@@ -48,12 +48,8 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 }
 
 .container-hero {
-  padding: 118px 60px;
-
-  @media screen and (min-width: 480px) {
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
+  padding-top: 118px;
+  padding-bottom: 118px;
 
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
@@ -65,7 +61,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   margin: 0 auto 30px;
   font-weight: 900;
   font-size: 26px;
-  line-height: 1.61;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
