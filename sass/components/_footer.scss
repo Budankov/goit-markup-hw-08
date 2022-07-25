@@ -23,10 +23,6 @@
 .company-address {
   display: inline-block;
   width: 232px;
-
-  @media screen and (min-width: 1200px) {
-    margin-right: 70px;
-  }
 }
 
 .company-address__logo {

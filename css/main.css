@@ -668,6 +668,7 @@ ol {
 
 .services__titile {
   color: #ffffff;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   text-align: center;
@@ -1043,6 +1044,11 @@ ol {
     margin-bottom: 30px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .filters-list {
+    margin-bottom: 50px;
+  }
+}
 
 .filters-list__button {
   font-family: inherit;
@@ -1102,11 +1108,6 @@ ol {
 .company-address {
   display: inline-block;
   width: 232px;
-}
-@media screen and (min-width: 1200px) {
-  .company-address {
-    margin-right: 70px;
-  }
 }
 
 .company-address__logo {
